@@ -1314,8 +1314,7 @@ static void hidg_unbind(struct usb_configuration *c, struct usb_function *f)
 	wake_up(&hidg->read_queue);
 	wake_up(&hidg->write_queue);
 
-	device_destroy(hidg_class, MKDEV(major, hidg->minor));
-		cdev_device_del(&hidg->cdev, &hidg->dev);
+	cdev_device_del(&hidg->cdev, &hidg->dev);
 
 
 	usb_free_all_descriptors(f);
