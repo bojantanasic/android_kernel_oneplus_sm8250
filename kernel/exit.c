@@ -82,7 +82,10 @@
 #include <linux/tpd/tpd.h>
 #endif
 
-#ifdef CONFIG_OPLUS_FEATURE_UID_PERF
+#ifdef OPLUS_FEATURE_UID_PERF
+CONFIG_OPLUS_FEATURE_UID_PERF=y
+#endif
+
 extern void uid_check_out_pevent(struct task_struct *task);
 
 /*
