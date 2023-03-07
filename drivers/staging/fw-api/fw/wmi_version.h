@@ -38,7 +38,9 @@
 /** WMI revision number has to be incremented when there is a
  *  change that may or may not break compatibility. */
 
+
 #define __WMI_REVISION_ 1270
+
 
 
 /** The Version Namespace should not be normally changed. Only
