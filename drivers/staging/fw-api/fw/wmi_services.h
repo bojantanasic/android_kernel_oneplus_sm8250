@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2011-2021 The Linux Foundation. All rights reserved.
- * Copyright (c) 2021-2022 Qualcomm Innovation Center, Inc. All rights reserved.
+ * Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved.
  *
  * Previously licensed under the ISC license by Qualcomm Atheros, Inc.
  *
@@ -600,6 +600,17 @@ typedef  enum  {
     WMI_SERVICE_XGAP_SUPPORT = 347, /* FW support for XGAP */
     WMI_SERVICE_OBSS_PER_PACKET_SR_SUPPORT = 348, /* Spatial Reuse support for per PPDU setting */
     WMI_SERVICE_MULTIPLE_VDEV_RESTART_BITMAP_SUPPORT = 349, /* Extended Multiple VDEV Restart with Bitmap Support */
+    WMI_SERVICE_WMI_SERVICE_WPA3_SHA384_ROAM_SUPPORT = 350, /* Indicates FW supports WPA3 SHA384 roaming */
+    WMI_SERVICE_ODD_LIVEDUMP_SUPPORT = 351, /* Support for ODD Livedump from the FW */
+    WMI_SERVICE_EIRP_PREFERRED_SUPPORT = 352, /* Support for OOBE feature where only EIRP powers will be sent in 6 GHz TPC WMI */
+    WMI_SERVICE_RTT_TX_RX_CHAIN_IDX_SUPPORT = 353, /* FW Supports configuring Tx and Rx Chainmask in intiator and Responder */
+    WMI_SERVICE_RESTRICTED_TWT = 354, /* Support for R-TWT feature */
+    WMI_SERVICE_SLO_SUPPORTED = 355, /* Support for Single Link 11BE */
+    WMI_SERVICE_RTT_11AZ_TB_RSTA_SUPPORT = 356, /* FW support for 11AZ trigger based ranging Responder (RSTA) role */
+    WMI_SERVICE_SUPPORT_11D_FOR_HOST_SCAN = 357,
+    WMI_SERVICE_DETERMINISTIC_SCHEDULER_LEVEL0 = 358, /* FW supports 12.2 level scheduler mode disable commands and stats */
+    WMI_SERVICE_COORDINATED_AP_TDMA = 359, /* Support for Coordinated-AP TDMA feature */
+    WMI_SERVICE_HPA_SUPPORT = 360, /* Support for Host Platform Authentication */
 
 
     WMI_MAX_EXT2_SERVICE
