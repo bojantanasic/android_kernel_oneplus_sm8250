@@ -400,13 +400,7 @@ static int cam_mem_util_get_dma_buf_fd(size_t len,
 	}
 
 
-	if (tbl.alloc_profile_enable) {
-		CAM_GET_TIMESTAMP(ts2);
-		CAM_GET_TIMESTAMP_DIFF_IN_MICRO(ts1, ts2, microsec);
-		trace_cam_log_event("IONAllocProfile", "size and time in micro",
-			len, microsec);
-
-	}
+	
 
 	return rc;
 

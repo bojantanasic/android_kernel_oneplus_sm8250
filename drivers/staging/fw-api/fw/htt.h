@@ -234,16 +234,14 @@
  * 3.107 Add traffic_end_indication bitfield in htt_tx_msdu_desc_ext2_t.
  * 3.108 Add HTT_H2T_MSG_TYPE_UMAC_HANG_RECOVERY_PREREQUISITE_SETUP def.
  * 3.109 Add HTT_T2H RX_ADDBA_EXTN,RX_DELBA_EXTN defs.
-<<<<<<< HEAD
+
 * 3.110 Add more word_mask fields in htt_tx_monitor_cfg_t.
-=======
- * 3.110 Add more word_mask fields in htt_tx_monitor_cfg_t.
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
+=
  * 3.111 Add RXPCU filter enable flag in RX_RING_SELECTION_CFG msg.
  * 3.112 Add logical_link_id field in rx_peer_metadata_v1.
  * 3.113 Add add rx msdu,mpdu,ppdu fields in rx_ring_selection_cfg_t
  * 3.114 Add HTT_H2T_MSG_TYPE_UMAC_HANG_RECOVERY_SOC_START_PRE_RESET def.
-<<<<<<< HEAD
+
  * 3.115 Add HTT_H2T_MSG_TYPE_RX_CCE_SUPER_RULE_SETUP and
  *       HTT_T2H_MSG_TYPE_RX_CCE_SUPER_RULE_SETUP_DONE msg defs.
  * 3.116 Add HTT_TX_MONITOR_CFG_WORD_MASK_COMPACTION_ENABLE flag.
@@ -252,11 +250,7 @@
 #define HTT_CURRENT_VERSION_MAJOR 3
 #define HTT_CURRENT_VERSION_MINOR 117
 
-=======
- */
-#define HTT_CURRENT_VERSION_MAJOR 3
-#define HTT_CURRENT_VERSION_MINOR 114
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
+
 
 #define HTT_NUM_TX_FRAG_DESC  1024
 
@@ -786,11 +780,10 @@ typedef enum {
     HTT_STATS_PEER_AX_OFDMA_STATS_TAG              = 174, /* htt_peer_ax_ofdma_stats_tlv */
     HTT_STATS_TX_PDEV_MU_EDCA_PARAMS_STATS_TAG     = 175, /* htt_tx_pdev_mu_edca_params_stats_tlv_v */
     HTT_STATS_PDEV_MBSSID_CTRL_FRAME_STATS_TAG     = 176, /* htt_pdev_mbssid_ctrl_frame_stats_tlv */
-<<<<<<< HEAD
+
     HTT_STATS_TX_PDEV_MLO_ABORT_TAG                = 177, /* htt_tx_pdev_stats_mlo_abort_tlv_v */
     HTT_STATS_TX_PDEV_MLO_TXOP_ABORT_TAG           = 178, /* htt_tx_pdev_stats_mlo_txop_abort_tlv_v */
-=======
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
+
 
 
     HTT_STATS_MAX_TAG,
@@ -861,10 +854,8 @@ enum htt_h2t_msg_type {
     HTT_H2T_MSG_TYPE_STREAMING_STATS_REQ   = 0x20,
     HTT_H2T_MSG_TYPE_UMAC_HANG_RECOVERY_PREREQUISITE_SETUP = 0x21,
     HTT_H2T_MSG_TYPE_UMAC_HANG_RECOVERY_SOC_START_PRE_RESET = 0x22,
-<<<<<<< HEAD
     HTT_H2T_MSG_TYPE_RX_CCE_SUPER_RULE_SETUP = 0x23,
-=======
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
+
 
     /* keep this last */
     HTT_H2T_NUM_MSGS

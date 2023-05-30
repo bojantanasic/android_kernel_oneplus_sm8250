@@ -315,10 +315,9 @@ typedef enum {
     WMI_GRP_SAWF,           /* 0x49 SAWF (Service Aware WiFi) */
     WMI_GRP_QUIET_OFL,      /* 0x4a Quiet offloads */
     WMI_GRP_ODD,            /* 0x4b ODD */
-<<<<<<< HEAD
+
     WMI_GRP_TDMA,           /* 0x4c TDMA */
-=======
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
+
 } WMI_GRP_ID;
 
 #define WMI_CMD_GRP_START_ID(grp_id) (((grp_id) << 12) | 0x1)
@@ -1354,9 +1353,7 @@ typedef enum {
     WMI_SAR_GET_LIMITS_CMDID,
     /** Dedicated BT Antenna Mode (DBAM) command */
     WMI_COEX_DBAM_CMDID,
-    WMI_TAS_POWER_HISTORY_CMDID,
-
-    WMI_TAS_POWER_HISTORY_CMDID,
+    WMI_TAS_POWER_HISTORY_CMDID,  
     WMI_ESL_EGID_CMDID,
 
 
@@ -1562,7 +1559,7 @@ typedef enum {
     /** disable a service class */
     WMI_SAWF_SVC_CLASS_DISABLE_CMDID,
 
-<<<<<<< HEAD
+
 
     /* WMI commands specific to ODD */
     WMI_ODD_LIVEDUMP_REQUEST_CMDID = WMI_CMD_GRP_START_ID(WMI_GRP_ODD),
@@ -1570,11 +1567,7 @@ typedef enum {
     /* WMI commands specific to TDMA */
     WMI_TDMA_SCHEDULE_REQUEST_CMDID = WMI_CMD_GRP_START_ID(WMI_GRP_TDMA),
 
-=======
-    /* WMI commands specific to ODD */
-    WMI_ODD_LIVEDUMP_REQUEST_CMDID = WMI_CMD_GRP_START_ID(WMI_GRP_ODD),
 
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
 } WMI_CMD_ID;
 
 typedef enum {
@@ -3489,16 +3482,13 @@ typedef struct {
      */
     A_UINT32 afc_deployment_type;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
     /*
      * Board data check report. Please see wmi_hw_bd_status_type enum values.
      */
     A_UINT32 hw_bd_status;
 
-<<<<<<< HEAD
+
     /*
      * max block ack window size FW supports for tx.
      */
@@ -3510,8 +3500,7 @@ typedef struct {
     A_UINT32 rx_aggr_ba_win_size_max;
 
 
-=======
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
+
     /* Followed by next TLVs:
      *     WMI_DMA_RING_CAPABILITIES          dma_ring_caps[];
      *     wmi_spectral_bin_scaling_params    wmi_bin_scaling_params[];
@@ -8992,10 +8981,7 @@ typedef enum {
      */
     WMI_PDEV_PARAM_DISABLE_LPI_ANT_OPTIMIZATION,
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
     /*
      * Param to configure exclusive RSID range for 11az TB ranging.
      * RSID's are subset of total AID space and must not be used
@@ -9003,7 +8989,7 @@ typedef enum {
      * based ranging.
      */
     WMI_PDEV_PARAM_RTT_11AZ_RSID_RANGE,
-<<<<<<< HEAD
+
 
     /*
      * Disable the indicated DL and UL scheduler for the PDEV.
@@ -9048,8 +9034,7 @@ typedef enum {
      */
     WMI_PDEV_PARAM_SET_SCAN_BLANKING_MODE,
 
-=======
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
+
 } WMI_PDEV_PARAM;
 
 #define WMI_PDEV_ONLY_BSR_TRIG_IS_ENABLED(trig_type) WMI_GET_BITS(trig_type, 0, 1)
@@ -10760,7 +10745,7 @@ typedef struct {
     A_UINT32 num_beacon_miss;
     /** time slice duty cycle percentage of this interface */
     A_UINT32 time_slice_duty_cycle;
-<<<<<<< HEAD
+
 
     /**
      * Current home channel noise floor value report to host
@@ -10768,13 +10753,13 @@ typedef struct {
      */
     A_INT32 nf_cal_val;
 
-=======
+
     /**
      * noise floor value report to host
      * Units are dBm, values 0x0000ffff and 0x0 are invalid.
      */
     A_INT32 nf_cal_val_per_freq;
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
+
 } wmi_iface_link_stats;
 
 typedef enum {
@@ -15256,10 +15241,7 @@ typedef enum {
          */
         WMI_VDEV_PARAM_VDEV_STATS_ID_UPDATE,                 /* 0x8010 */
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
         /*
          * Enable or disable Extra LTF capability in Auto rate and
          * Fixed rate EHT data packet transmissions.
@@ -15269,7 +15251,7 @@ typedef enum {
          */
         WMI_VDEV_PARAM_EXTRA_EHT_LTF,                  /* 0x8011 */
 
-<<<<<<< HEAD
+
         /*
          * Disable the indicated DL and UL scheduler for the VDEV.
          *
@@ -15299,8 +15281,7 @@ typedef enum {
         WMI_VDEV_PARAM_SET_DISABLED_SCHED_MODES,       /* 0x8012 */
 
 
-=======
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
+
     /*=== END VDEV_PARAM_PROTOTYPE SECTION ===*/
 } WMI_VDEV_PARAM;
 
@@ -33288,14 +33269,13 @@ static INLINE A_UINT8 *wmi_id_to_name(A_UINT32 wmi_command)
         WMI_RETURN_STRING(WMI_VENDOR_VDEV_CMDID);
         WMI_RETURN_STRING(WMI_VENDOR_PEER_CMDID);
         WMI_RETURN_STRING(WMI_VDEV_SET_TWT_EDCA_PARAMS_CMDID); /* XPAN TWT */
-<<<<<<< HEAD
+
         WMI_RETURN_STRING(WMI_ESL_EGID_CMDID);
         WMI_RETURN_STRING(WMI_TDMA_SCHEDULE_REQUEST_CMDID);
         WMI_RETURN_STRING(WMI_HPA_CMDID);
         WMI_RETURN_STRING(WMI_PDEV_SET_TGTR2P_TABLE_CMDID); /* To set target rate to power table */
 
-=======
->>>>>>> 25308284b18f3 (Merge tag 'LA.UM.9.12.r1-15200-SMxx50.QSSI13.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into android13-4.19-kona)
+
     }
 
     return (A_UINT8 *) "Invalid WMI cmd";
@@ -41613,91 +41593,7 @@ typedef struct {
 #define WMI_ODD_LIVEDUMP_RESP_GET_STATUS(status) \
     WMI_GET_BITS(status, 0, 4)
 
-typedef enum {
-    ODD_LIVEDUMP_STATUS_SUCCESS = 0,
-    ODD_LIVEDUMP_STATUS_FAILURE,
-    ODD_MAX_LIVEDUMP_STATUS,
-} odd_livedump_resp_status;
 
-typedef struct {
-    A_UINT32 tlv_header;
-    A_UINT32 odd_livedump_request_id;
-    /* Following this structure is the TLV:
-     *    A_UINT32 odd_livedump_id_list[]; <-- array livedump_id list
-     */
-} wmi_livedump_request_cmd_fixed_param;
-
-typedef struct {
-    A_UINT32 tlv_header;
-    /* odd_livedump_request_id:
-     * this echoes the request id that was sent in the wmi_livedump_cmd_param
-     */
-    A_UINT32 odd_livedump_request_id;
-    /*
-     * 4 LSB's to indicate status of the odd_livedump_request_id processed
-     * by the FW, the other 28bits to kept for future enhancements.
-     * The status will be defined in the enum odd_livedump_resp_status
-     * 0 - SUCCESS
-     * 1 - FAILURE
-     * Refer to the WMI_ODD_LIVEDUMP_RESP_SET,_GET_STATUS macros.
-     */
-    A_UINT32 status;
-} wmi_livedump_response_event_fixed_param;
-
-#define WMI_MLO_LINK_REMOVAL_GET_VDEVID(tbtt_info)               WMI_GET_BITS(tbtt_info, 0, 8)
-#define WMI_MLO_LINK_REMOVAL_SET_VDEVID(tbtt_info, value)        WMI_SET_BITS(tbtt_info, 0, 8, value)
-#define WMI_MLO_LINK_REMOVAL_GET_LINKID(tbtt_info)               WMI_GET_BITS(tbtt_info, 8, 8)
-#define WMI_MLO_LINK_REMOVAL_SET_LINKID(tbtt_info, value)        WMI_SET_BITS(tbtt_info, 8, 8, value)
-#define WMI_MLO_LINK_REMOVAL_GET_TBTT_COUNT(tbtt_info)           WMI_GET_BITS(tbtt_info, 16, 16)
-#define WMI_MLO_LINK_REMOVAL_SET_TBTT_COUNT(tbtt_info, value)    WMI_SET_BITS(tbtt_info, 16, 16, value)
-
-typedef struct {
-    /** TLV tag and len; tag equals WMITLV_TAG_STRUC_wmi_mlo_link_removal_tbtt_count; */
-    A_UINT32 tlv_header;
-    union {
-        struct {
-            A_UINT32 vdev_id:8,
-                     link_id:8,
-                     tbtt_count:16;
-        };
-        A_UINT32 tbtt_info;
-    };
-} wmi_mlo_link_removal_tbtt_count;
-
-typedef struct {
-    /** TLV tag and len; tag equals WMITLV_TAG_STRUC_wmi_mlo_link_removal_tbtt_update; */
-    A_UINT32 tlv_header;
-
-    A_UINT32 tbtt_count;
-
-    A_UINT32 qtimer_ts_low; /* lower-32 bits */
-    A_UINT32 qtimer_ts_high; /* higher-32 bits */
-
-    A_UINT32 tsf_low; /* lower-32 bits */
-    A_UINT32 tsf_high; /* higher-32 bits */
-} wmi_mlo_link_removal_tbtt_update;
-
-typedef struct {
-   /** TLV tag and len; tag equals WMITLV_TAG_STRUC_wmi_mlo_link_removal_evt_fixed_param; */
-    A_UINT32 tlv_header;
-    A_UINT32 vdev_id;
-
-    /*
-     * Followed by TLVs:
-     *     wmi_mlo_link_removal_tbtt_update
-     */
-} wmi_mlo_link_removal_evt_fixed_param;
-
-typedef struct {
-    /** TLV tag and len; tag equals WMITLV_TAG_STRUC_wmi_mlo_link_removal_cmd_fixed_param */
-    A_UINT32 tlv_header;
-    A_UINT32 vdev_id;
-    A_UINT32 reconfig_ml_ie_num_bytes_valid;
-
-   /* This TLV is followed by array of bytes:
-    *   A_UINT8 reconfig_ml_ie[]; <-- Entire reconfiguration element (multi-link control + common-info + 1 per-sta profile)
-    */
-} wmi_mlo_link_removal_cmd_fixed_param;
 
 typedef struct {
     A_UINT32 tlv_header; /** TLV tag and len; tag equals WMITLV_TAG_STRUC_wmi_per_peer_sched_mode_disable */
